@@ -4,9 +4,9 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "prisma generate && prisma db push && next build",
-    "start": "next start",
+    "dev": "node init && next dev --turbopack",
+    "build": "node init && prisma generate && prisma db push && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
